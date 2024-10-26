@@ -33,8 +33,8 @@ const menuItems = [
 
 export default function Sidebar({ isOpen, onToggle, activeItem, setActiveItem, onMenuClick }) {
     const handleItemClick = (item) => {
-        setActiveItem(item.text); // Cập nhật mục được chọn
-        onMenuClick(item.text); // Cập nhật tiêu đề Header
+        setActiveItem(item.text);
+        onMenuClick(item.text); 
     };
 
     return (

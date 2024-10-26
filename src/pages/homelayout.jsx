@@ -1,4 +1,3 @@
-// src/pages/HomePage.jsx
 import { useState } from 'react';
 import { Box } from '@mui/material';
 import Sidebar from '../components/sidebar';
