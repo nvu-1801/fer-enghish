@@ -1,24 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+// src/App.jsx
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import HomePage from './pages/homelayout';
+// import UserManagement from './pages/UserManagement';
+// import ClassManagement from './pages/ClassManagement';
+// import AttendanceTracking from './pages/AttendanceTracking';
+// import SalaryAndFee from './pages/SalaryAndFee';
+// import Help from './pages/Help';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        {/* <Route path="/user-management" element={<UserManagement />} />
+        <Route path="/class-management" element={<ClassManagement />} />
+        <Route path="/attendance-tracking" element={<AttendanceTracking />} />
+        <Route path="/salary-and-fee" element={<SalaryAndFee />} />
+        <Route path="/help" element={<Help />} /> */}
+      </Routes>
+    </Router>
   );
 }
 
